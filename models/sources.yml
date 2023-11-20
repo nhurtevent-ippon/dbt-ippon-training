@@ -23,3 +23,10 @@ sources:
             tests:
               - unique:
                  severity: warn
+      - name: fuzzy_orders
+        description: Dédé ne sait pas écrire
+  - name: dishes
+    database: DB_DBT_NHURTEVENT_DEV
+    schema: source
+    tables:
+      - name: dishes

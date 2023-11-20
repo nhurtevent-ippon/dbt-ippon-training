@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: stg_restaurants_turnover
+    description: compute the turnover of the restaurants
+    columns:
+      - name: restaurant_identifier
+        tests:
+          - not_null
+          - unique

@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: restaurants_turnover_ordered
+    description: sort the turnovers
+    columns:
+      - name: restaurant_identifier
+        tests:
+          - not_null
+          - unique
+      - name: name
+        tests:
+          - not_null

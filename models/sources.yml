@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: restaurant
+    database: DB_DBT_NHURTEVENT_DEV
+    schema: source
+    tables:
+      - name: restaurant
+        identifier: restaurants

@@ -1,5 +1,5 @@
 with restaurants as (
-    select * from {{ source('restaurants', 'restaurants') }}
+    select * from {{ mockable_source('restaurants', 'restaurants', 'sample_restaurants') }}
 )
 
 select * from restaurants

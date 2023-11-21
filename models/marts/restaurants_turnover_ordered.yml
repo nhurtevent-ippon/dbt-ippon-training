@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: restaurants_turnover_ordered
+    description: sort the turnovers
+    tests:
+      - dbt_utils.equality:
+          compare_model: ref('expected_restaurants_turnover_ordered') 
+    columns:
+      - name: restaurant_identifier
+        tests:
+          - not_null
+          - unique
+      - name: name
+        

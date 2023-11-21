@@ -1,0 +1,32 @@
+version: 2
+
+sources:
+  - name: restaurants
+    database: DB_DBT_NHURTEVENT_DEV
+    schema: source
+    tables:
+      - name: restaurants
+        identifier: restaurants
+        columns:
+          - name: identifier
+            tests:
+              - unique:
+                  severity: warn
+  - name: orders
+    database: DB_DBT_NHURTEVENT_DEV
+    schema: source
+    tables:
+      - name: orders
+        description: All the restaurant orders
+        columns:
+          - name: identifier
+            tests:
+              - unique:
+                 severity: warn
+      - name: fuzzy_orders
+        description: Dédé ne sait pas écrire
+  - name: dishes
+    database: DB_DBT_NHURTEVENT_DEV
+    schema: source
+    tables:
+      - name: dishes

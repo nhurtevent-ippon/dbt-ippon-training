@@ -17,7 +17,7 @@ To begin with :
 
 The training is branch based and each branch _scenario\_*_ corresponds to the **solution** of its associated scenario.
 
-To start the training, please use the *base* branch.
+To start the training, please use the *base* branch. 
 
 <br>
 

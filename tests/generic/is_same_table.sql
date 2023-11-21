@@ -1,4 +1,4 @@
-{% test is_positive(model, column_name, compare_model, compare_columns) %}
+{% is_same_table(model, column_name, compare_model, compare_columns) %}
 
     select *
     from table(

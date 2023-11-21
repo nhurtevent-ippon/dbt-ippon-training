@@ -3,8 +3,9 @@ with restaurant_orders as (
 )
 
 select 
-    max(restaurant_identifier.identifier) as restaurant_identifier, 
+    restaurant_identifier, 
     max(r.name) as name, 
     max(r.address) as address, 
     sum(r.amount) as turnover
-from restaurants r
+from restaurant_orders r
+group by restaurant_identifier
